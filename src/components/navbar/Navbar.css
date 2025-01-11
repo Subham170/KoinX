@@ -1,0 +1,135 @@
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    width: 100%;
+    border-bottom: 1px solid #e5e7eb;
+    background-color: white;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0052FE;
+  }
+  
+  .logo-tm {
+    font-size: 0.625rem;
+    margin-left: 0.125rem;
+    align-self: flex-start;
+  }
+  
+  .desktop-nav {
+    display: none;
+  }
+  
+  .nav-link {
+    margin-left: 2rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #4b5563;
+    text-decoration: none;
+  }
+  
+  .nav-link:hover {
+    color: #1f2937;
+  }
+  
+  .nav-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .get-started-btn {
+    background-color: #0052FE;
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+  
+  .get-started-btn:hover {
+    background-color: #0040CB;
+  }
+  
+  .menu-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+  
+  .mobile-menu {
+    position: fixed;
+    top: 64px;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+    background-color: white;
+    box-shadow: -2px 0 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+  }
+  
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .mobile-nav-link {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #4b5563;
+    text-decoration: none;
+  }
+  
+  .mobile-nav-link:hover {
+    color: #1f2937;
+  }
+  
+  .mobile-get-started {
+    margin-top: 1rem;
+    width: 100%;
+  }
+  
+  @media (min-width: 768px) {
+    .desktop-nav {
+      display: flex;
+      align-items: center;
+    }
+  
+    .mobile-only {
+      display: none;
+    }
+  
+    .desktop-only {
+      display: block;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .desktop-only {
+      display: none;
+    }
+  }
+  
+  

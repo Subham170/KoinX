@@ -1,0 +1,114 @@
+.bitcoin-info {
+    max-width: 1024px;
+    padding: 24px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  .about-section {
+    margin-bottom: 32px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #0f172a;
+  }
+  
+  .what-is-bitcoin {
+    margin-bottom: 24px;
+  }
+  
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #1e293b;
+  }
+  
+  p {
+    color: #334155;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+  
+  .holding-section h2 {
+    margin-bottom: 24px;
+  }
+  
+  .cards-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+  
+  @media (min-width: 768px) {
+    .cards-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  .card {
+    border-radius: 12px;
+    padding: 16px;
+    color: white;
+  }
+  
+  .profit-card {
+    background: linear-gradient(to right, #14b8a6, #2563eb);
+  }
+  
+  .tax-card {
+    background: linear-gradient(to right, #fb923c, #ef4444);
+  }
+  
+  .card-content {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  
+  .card-content img {
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .card-text {
+    flex: 1;
+  }
+  
+  .card-text h3 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  
+  .check-now-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: white;
+    color: black;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .check-now-btn:hover {
+    background-color: #f1f5f9;
+  }
+  
+  .check-now-btn svg {
+    width: 16px;
+    height: 16px;
+  }
+    

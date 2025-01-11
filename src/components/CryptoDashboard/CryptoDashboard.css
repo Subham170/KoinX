@@ -1,0 +1,249 @@
+.dashboard-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    max-width: 1400px;
+     margin: 0 auto;
+     margin-bottom: 30px;
+     
+    /* padding: 24px; */
+  }
+  
+  .main-content {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .price-header {
+    margin-bottom: 24px;
+  }
+  
+  .coin-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  
+  .coin-logo {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .coin-info h1 {
+    font-size: 24px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .coin-symbol {
+    color: #666;
+    font-weight: 500;
+  }
+  
+  .rank {
+    padding: 4px 8px;
+    background: #768396;
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .price-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .current-price {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .current-price h2 {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  
+  .price-change {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: 500;
+  }
+  
+  .price-change.positive {
+    background: #EBF9F4;
+    color: #14B079;
+  }
+  
+  .time-period {
+    color: #666;
+  }
+  
+  .price-inr {
+    color: #666;
+    font-size: 16px;
+  }
+  
+  .chart-container {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .time-filters {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .time-button {
+    padding: 4px 12px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #666;
+    border-radius: 4px;
+  }
+  
+  .time-button:hover {
+    background: #F8FAFC;
+  }
+  
+  .time-button.active {
+    background: #E2ECFE;
+    color: #0052FE;
+  }
+  
+  .chart {
+    height: 400px;
+    width: 100%;
+  }
+  
+  /* Sidebar Styles */
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .get-started-card {
+    background: #0052FE;
+    color: white;
+    padding: 24px;
+    border-radius: 16px;
+    text-align: center;
+  }
+  
+  .get-started-card h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  
+  .get-started-card p {
+    margin-bottom: 24px;
+    line-height: 1.5;
+  }
+  
+  .feature-image {
+    width: 150px;
+    margin: 24px auto;
+  }
+  
+  .get-started-button {
+    background: white;
+    color: black;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+  
+  .get-started-button:hover {
+    background: #f8f9fa;
+  }
+  
+  .trending-section {
+    background: white;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .trending-section h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  
+  .trending-coins {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .trend-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .coin-name {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .coin-name img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .dashboard-container {
+      grid-template-columns: 1fr;
+    }
+    
+    .sidebar {
+      order: -1;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .chart-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+    }
+    
+    .time-filters {
+      width: 100%;
+      overflow-x: auto;
+      padding-bottom: 8px;
+    }
+  }
+  
+  .tradingview-widget-container {
+    height: 100%;
+  }  

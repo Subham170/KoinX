@@ -1,0 +1,157 @@
+.crypto-tracker {
+    max-width: 1200px;
+    padding: 20px;
+    font-family: system-ui, -apple-system, sans-serif;
+    background-color: white;
+  }
+
+  @media screen and (max-width: 768px) {
+    .crypto-tracker {
+        width: 90vw;
+    }
+  }
+  
+  .section {
+    margin-bottom: 40px;
+  }
+  
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+  }
+  
+  .carousel-container {
+    position: relative;
+  }
+  
+  .carousel-wrapper {
+    overflow: hidden;
+    position: relative;
+    padding: 0 40px;
+  }
+  
+  .carousel-content {
+    display: flex;
+    gap: 16px;
+    transition: transform 0.3s ease;
+    touch-action: pan-x;
+  }
+  
+  .crypto-card {
+    min-width: 200px;
+    padding: 16px;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    flex-shrink: 0;
+    border: 1px solid #e5e7eb;
+  }
+  
+  .crypto-card:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .crypto-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+  
+  .crypto-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+  }
+  
+  .crypto-name {
+    font-weight: 500;
+    color: #1a1a1a;
+  }
+  
+  .crypto-change {
+    margin-left: auto;
+    font-size: 14px;
+  }
+  
+  .crypto-change.positive {
+    color: #10B981;
+  }
+  
+  .crypto-change.negative {
+    color: #EF4444;
+  }
+  
+  .crypto-price {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .chart-container2 {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sparkline {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: all 0.2s ease;
+  }
+  
+  .carousel-button:hover:not(:disabled) {
+    background-color: #f3f4f6;
+    transform: translateY(-50%) scale(1.05);
+  }
+  
+  .carousel-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .carousel-button.prev {
+    left: 0;
+  }
+  
+  .carousel-button.next {
+    right: 0;
+  }
+  
+  .loading {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6b7280;
+  }
+  
+  .error {
+    color: #EF4444;
+    padding: 20px;
+    text-align: center;
+  }
+  

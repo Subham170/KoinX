@@ -1,0 +1,94 @@
+.tokenomics-container {
+    max-width: 800px;
+    padding: 20px;
+    font-family: system-ui, -apple-system, sans-serif;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  .tokenomics-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 24px;
+  }
+  
+  .distribution-title {
+    font-size: 20px;
+    margin-bottom: 32px;
+  }
+  
+  .chart-container3 {
+    display: flex;
+    gap: 48px;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+  
+  .donut-chart {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: conic-gradient(#ff9500 0% 20%, #007AFF 20% 100%);
+  }
+  
+  .donut-chart::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 60%;
+    background-color: white;
+    border-radius: 50%;
+  }
+  
+  .legend {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .legend-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+  
+  .legend-dot.crowdsale {
+    background-color: #007AFF;
+  }
+  
+  .legend-dot.foundation {
+    background-color: #ff9500;
+  }
+  
+  .description {
+    color: #333;
+    line-height: 1.6;
+    margin-top: 24px;
+  }
+  
+  @media (max-width: 600px) {
+    .chart-container3 {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 24px;
+    }
+  
+    .donut-chart {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  
+  

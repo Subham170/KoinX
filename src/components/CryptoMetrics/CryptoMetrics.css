@@ -1,0 +1,149 @@
+.metrics-container {
+    background: white;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  /* Performance Section */
+  .performance-section {
+    margin-bottom: 32px;
+  }
+  
+  h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #0F172A;
+    margin-bottom: 20px;
+  }
+  
+  .price-range {
+    margin-bottom: 24px;
+  }
+  
+  .range-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+  }
+  
+  .label {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .label span:first-child {
+    color: #64748B;
+    font-size: 14px;
+  }
+  
+  .label span:last-child {
+    color: #0F172A;
+    font-weight: 500;
+  }
+  
+  .range-bar {
+    position: relative;
+    height: 6px;
+    margin: 16px 0;
+  }
+  
+  .gradient-bar {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, 
+      #FF4949 0%, 
+      #FF4E11 15%, 
+      #FC870A 30%, 
+      #FFAF11 45%, 
+      #C2CB21 60%, 
+      #11EB68 100%
+    );
+    border-radius: 3px;
+  }
+  
+  .pointer {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 16px;
+    background: #0F172A;
+  }
+  
+  .pointer-value {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    color: #0F172A;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
+  /* Fundamentals Section */
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .info-icon {
+    color: #64748B;
+    cursor: help;
+  }
+  
+  .fundamentals-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    border-top: 1px solid #E2E8F0;
+    padding-top: 16px;
+  }
+  
+  .metric {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #E2E8F0;
+  }
+  
+  .metric-label {
+    color: #64748B;
+    font-size: 14px;
+  }
+  
+  .metric-value {
+    color: #0F172A;
+    font-weight: 500;
+    text-align: right;
+  }
+  
+  .negative {
+    color: #FF4949;
+  }
+  
+  .positive {
+    color: #11EB68;
+  }
+  
+  .date {
+    font-size: 12px;
+    color: #64748B;
+    margin-top: 2px;
+  }
+  
+  @media (max-width: 768px) {
+    .fundamentals-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .metrics-container {
+      padding: 16px;
+    }
+  }  
