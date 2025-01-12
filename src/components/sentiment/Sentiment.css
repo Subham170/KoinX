@@ -93,11 +93,13 @@
   
   .event-title {
     font-weight: 500;
+    display: flex;
     color: #1a1a1a;
   }
   
   .event-description {
     color: #4b5563;
+    display: flex;
     line-height: 1.5;
     font-size: 14px;
   }
